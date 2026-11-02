@@ -2,7 +2,7 @@ English · [Русский](README_RU.md)
 # Angry Birds Seasons ARM64 Port
 **Versions 6.6.2 and 4.1.1 · Android 8.0+ · ARM64**
 
-A port of my favorite game in the Angry Birds series. I couldn't find an ARM64 port, so I decided to ~~make~~ vibecode one myself, on the base of MrEmpathy's [AB: Star Wars II][star-wars-ii] and [AB: Star Wars] [star-wars] ports.
+A port of my favorite game in the Angry Birds series. I couldn't find an ARM64 port, so I decided to ~~make~~ vibecode one myself, on the base of MrEmpathy's [AB: Star Wars II][star-wars-ii] and [AB: Star Wars][star-wars] ports.
 
 The port uses a compatibility bridge built around [Dynarmic][dynarmic] to run the original game's ARM32 engine on ARM64 Android devices. Dynarmic recompiles the engine's instructions at runtime, while the bridge handles the calls it needs to make to Android. The game code and resources come from the original APK.
 
