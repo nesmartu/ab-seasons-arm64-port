@@ -1,0 +1,38 @@
+{
+  "bridge_upstream": {
+    "url": "https://github.com/MrEmpathy/angry-birds-star-wars-II-arm64",
+    "commit": "18615db1805fdf8ef3f93a8ba82608f1d206c1b7"
+  },
+  "dynarmic_upstream": {
+    "url": "https://github.com/Vita3K/dynarmic",
+    "commit": "c9298d3d39323032420e77ddda4d4266e758fa5e"
+  },
+  "boost": "1.86.0",
+  "ndk": "27.3.13750724 (r27d)",
+  "build_tools": "36.0.0",
+  "cmake": "3.30.5",
+  "downloads": {
+    "android-ndk-r27d-linux.zip": {
+      "size": 663956036,
+      "sha256": "601246087a682d1944e1e16dd85bc6e49560fe8b6d61255be2829178c8ed15d9"
+    },
+    "build-tools_r36_linux.zip": {
+      "size": 63737259,
+      "sha256": "5d9ac77fb6ff43d9da518a337b4fcf8f9097113df531d99ccefe80ef7ce8250b"
+    },
+    "cmake-3.30.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+      "size": 26923541,
+      "sha256": "db049e551e2f0562b3b225ac760888ee38b8ade62d74213f3611420e6b22f36d"
+    },
+    "ninja-1.11.1.1-py2.py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl": {
+      "size": 307194,
+      "sha256": "84502ec98f02a037a169c4b0d5d86075eaf6afc55e1879003d6cab51ced2ea4b"
+    }
+  },
+  "manifest_min_sdk": 26,
+  "manifest_target_sdk": 28,
+  "project": "ab-seasons-arm64-port",
+  "ninja": "1.11.1.1",
+  "python_requires": ">=3.11",
+  "java_requires": "17"
+}

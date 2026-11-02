@@ -1,0 +1,19 @@
+# Complete preset; see the project README and settings guide.
+# Полная конфигурация; см. README проекта и описание параметров.
+[build]
+input = "../input/AngryBirdsSeasons_v6.6.2.apk"
+output_dir = "../dist"
+suffix = "_original"
+key = "../signing/test-key.pem"
+cert = "../signing/test-cert.pem"
+
+[fixes]
+unlock_all_episodes = false
+unlock_ragnahog_levels = false
+unlock_all_levels = false
+unlocked_all_with_coins = false
+quest_video = false
+cosmetics = false
+
+[options]
+coins_amount = 1000000

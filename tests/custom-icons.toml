@@ -1,0 +1,7 @@
+[app]
+preserve_original_name=false
+name="Seasons Проверка"
+package="org.example.seasons.custom"
+[icons]
+custom=true
+directory="tests/custom-icons"

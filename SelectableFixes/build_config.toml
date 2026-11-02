@@ -1,0 +1,34 @@
+# Paths are resolved relative to this configuration file.
+[build]
+# One input APK, or a directory containing APKs (only direct *.apk children).
+input = "input/AngryBirdsSeasons_v6.6.2.apk"
+# Results and per-APK JSON audit reports are written here.
+output_dir = "dist"
+# Filename suffix; it changes neither the launcher name nor the Android package.
+suffix = "_SelectedFixes"
+# Public development key for standalone ARM32 builds; see signing/README_EN.md.
+key = "signing/test-key.pem"
+cert = "signing/test-cert.pem"
+
+[fixes]
+# Unlock episode access only; preserve normal progression and egg/star/feather gates.
+unlock_all_episodes = true
+# Open the Ragnahog calendar and enable normal startup progression for old saves.
+unlock_ragnahog_levels = true
+# Opt-in broad bypass: ALL shipped local levels, golden eggs and star/feather bonuses.
+# false by default. Independent of the narrow Ragnahog calendar repair.
+unlock_all_levels = false
+# Enable episode access plus a one-time coin top-up. Implies unlock_all_episodes.
+unlocked_all_with_coins = false
+# Pressing the quest video hint button immediately reveals the level hint.
+# Other rewarded videos, ads and quest completion conditions are unaffected.
+quest_video = true
+# Unlock all 108 Bird Wear entries in the 6.6.2 journal catalogue.
+cosmetics = false
+
+[options]
+# With unlocked_all_with_coins, top the balance up to AT LEAST this amount once
+# per save. Existing larger balances are retained; spending remains normal.
+# The marker is stable: rebuilding/installing does not grant the coins again.
+# Whole numbers 1..16000000 are supported (exact in the game's float32 format).
+coins_amount = 1000000

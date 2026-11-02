@@ -1,0 +1,80 @@
+# All relative paths below are resolved from this project root.
+# Every input/*.apk is processed; filenames are not compatibility allowlists.
+[app]
+# Preserve the Android package ID from the input manifest (NOT the signing certificate).
+# true overrides package/package_mode/package_base and suppresses .fixed.
+# false uses the custom package below, or legacy automatic rules if package is empty.
+preserve_original_package = false
+# Keep the input APK application/activity labels and localized name resources.
+# true ignores app.name; false replaces labels with app.name below.
+# This controls the DISPLAY NAME, not the Android application ID / package.
+preserve_original_name = true
+# Custom display name, used only when preserve_original_name = false.
+name = "Angry Birds Seasons"
+# Legacy fallback only when preserve_original_package=false AND package="".
+# Automatic package modes: "base" or "version" (default).
+# "version" -> com.rovio.seasonsport662.unofficial; digits come from APK versionName.
+# Missing/non-numeric versionName omits the digits. Filenames never affect the ID.
+package_mode = "version"
+# Base for automatic modes; must end in .unofficial.
+# Version digits are inserted immediately before .unofficial.
+package_base = "com.rovio.seasonsport.unofficial"
+# Custom Android package, used ONLY when preserve_original_package = false.
+# This exact value overrides legacy automatic rules; it does not change the signing key.
+package = "com.rovio.angrybirdsseasons.port"
+
+[icons]
+# false: keep the input APK icons; true: replace matching icons with PNG files.
+custom = false
+# Relative project path or absolute path. See icons/README_EN.md for PNG layout.
+directory = "icons"
+
+[bridge]
+# Virtual render height in pixels (0 = use the device render height; 0..8192).
+render_height = 1080
+# Frame cap (0 = no cap; 0..1000).
+max_fps = 60
+# true keeps the input INTERNET permission; false removes it for offline use.
+allow_network = false
+
+# Optional per-input overrides. The key MUST be the complete APK filename.
+# All [app] keys above can be overridden, including preserve_original_package.
+# Set preserve_original_package=false in a variant to use its custom/automatic ID.
+# An explicit package takes precedence over package_mode only when preservation is off.
+# To enable legacy automatic selection, set preserve_original_package=false and package="".
+# [variants."MyGame_unlocked.apk"]
+# preserve_original_package = false
+# preserve_original_name = false
+# name = "Angry Birds Seasons"
+# package_mode = "version"
+# package_base = "com.rovio.seasonsport.unofficial"
+# package = "org.example.seasons.unlock_all_episodes"
+
+[selectable_fixes]
+# Apply SelectableFixes BEFORE porting. Fixes have been tested ONLY on 6.6.2!
+# Other versions require enabled=false; engine compatibility checks still apply.
+# enabled=false or all [fixes] flags=false skips the patcher entirely.
+enabled = true
+# Append .fixed to the automatic Android package ONLY when enabled + a fix is selected.
+# false by default. This changes the application ID, NOT the signing certificate.
+# Input-package preservation and exact custom packages both override this suffix.
+append_fixed = false
+# One-time minimum coin balance when unlocked_all_with_coins=true; 1..16000000.
+coins_amount = 1000000
+
+[fixes]
+# Same names/semantics as standalone SelectableFixes/build_config.toml.
+# Disabled fixes preserve changes already present in the input APK.
+# Unlock episode access; retain normal level progression, golden eggs and bonus gates.
+unlock_all_episodes = true
+# Open the Ragnahog calendar and restore normal startup progression for old saves.
+unlock_ragnahog_levels = true
+# Opt-in broad bypass: ALL shipped local levels, golden eggs and star/feather bonuses.
+# false by default. Independent of the narrow Ragnahog calendar repair.
+unlock_all_levels = false
+# Grant episode access plus the one-time coin top-up; implies unlock_all_episodes.
+unlocked_all_with_coins = false
+# Reveal the quest level hint immediately when its video button is pressed.
+quest_video = true
+# Open all 108 shipped Bird Wear entries; cosmetic unlock is disabled by default.
+cosmetics = false

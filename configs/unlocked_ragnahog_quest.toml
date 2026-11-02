@@ -1,0 +1,32 @@
+# Complete preset; see the project README and settings guide.
+# Полная конфигурация; см. README проекта и описание параметров.
+[app]
+preserve_original_package = false
+preserve_original_name = true
+name = "Angry Birds Seasons"
+package_mode = "version"
+package_base = "com.rovio.seasonsport.unofficial"
+package = "com.rovio.angrybirdsseasons.port"
+
+[icons]
+custom = false
+directory = "icons"
+
+[bridge]
+render_height = 1080
+max_fps = 60
+allow_network = false
+
+
+[selectable_fixes]
+enabled = true
+append_fixed = false
+coins_amount = 1000000
+
+[fixes]
+unlock_all_episodes = true
+unlock_ragnahog_levels = true
+unlock_all_levels = false
+unlocked_all_with_coins = false
+quest_video = true
+cosmetics = false

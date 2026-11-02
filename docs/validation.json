@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-02",
+  "project": "ab-seasons-arm64-port",
+  "configuration": "build_config.toml (unchanged defaults)",
+  "inputs": [
+    {
+      "label": "project original",
+      "version": "6.6.2",
+      "sha256": "4d02bef2a363b48d33744c748588a2f8e1d5fcf96b4bd8ea6973a8c9ec84a148"
+    },
+    {
+      "label": "alternate-source attachment",
+      "version": "6.6.2",
+      "sha256": "4d02bef2a363b48d33744c748588a2f8e1d5fcf96b4bd8ea6973a8c9ec84a148"
+    }
+  ],
+  "inputs_byte_identical": true,
+  "full_native_builds_passed": true,
+  "signed_apk_audits_passed": true,
+  "clean_native_repeat_identical": true,
+  "test_counts": {
+    "main_config": 14,
+    "experiment_config": 12,
+    "behavior_project": 18,
+    "behavior_alternate": 18
+  },
+  "standalone_default_build_and_audit_passed": true,
+  "documentation_links_and_language_pairs_passed": true,
+  "python": "3.12.14",
+  "zlib": "1.3.2",
+  "outputs": {
+    "alternate-original+unlocked+ragnahogfix+questfix-arm64.apk": "d792d55ab28103699b67391129618f0aae1390e74485d867d551bdbf5e07a30a",
+    "alternate-original+unlocked+ragnahogfix+questfix.bridge.so": "2bb109417f5eca55b7faca5bfc52570d787804bf765ccab7f6b268ff8baf5aa1",
+    "project-original+unlocked+ragnahogfix+questfix-arm64.apk": "d792d55ab28103699b67391129618f0aae1390e74485d867d551bdbf5e07a30a",
+    "project-original+unlocked+ragnahogfix+questfix.bridge.so": "2bb109417f5eca55b7faca5bfc52570d787804bf765ccab7f6b268ff8baf5aa1"
+  },
+  "device_tested": false,
+  "experiment_411_native_rebuilt": false
+}
