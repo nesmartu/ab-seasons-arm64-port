@@ -26,7 +26,7 @@ Check [releases page][releases-link] for downloads.
 | **4.1.1 — Original** | Original game content, no gameplay mods | [APK][apk-original-411]|
 
 ## Sources APK's
-For the 6.6.2 version I used [this APK from archive.org] [source-original-662], for 4.1.1 — [this from uptodown][source-original-411].
+For the 6.6.2 version I used [this APK from archive.org][source-original-662], for 4.1.1 — [this from uptodown][source-original-411].
 
 ### Screenshots
 I'm too lazy :P

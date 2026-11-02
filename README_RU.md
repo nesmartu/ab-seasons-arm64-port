@@ -27,7 +27,7 @@
 | **4.1.1 — Original** | Оригинальная игра, без изменений | [APK][apk-original-411]|
 
 ## Источники APK
-Для версии 6.6.2 я брал [этот APK с сайта archive.org] [source-original-662], для 4.1.1 — [этот с uptodown][source-original-411].
+Для версии 6.6.2 я брал [этот APK с сайта archive.org][source-original-662], для 4.1.1 — [этот с uptodown][source-original-411].
 
 ### Скриншоты
 Мне лень их добавлять, выглядит абсолютно так же:)
